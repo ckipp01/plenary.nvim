@@ -440,6 +440,7 @@ function Path:shorten(len, exclude)
 end
 
 function Path:mkdir(opts)
+  vim.pretty_print(opts)
   opts = opts or {}
 
   local mode = opts.mode or 448 -- 0700 -> decimal
